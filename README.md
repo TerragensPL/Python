@@ -1,1 +1,1 @@
-# 3Aprendiendo Python desde cero
+# Aprendiendo Python desde cero
