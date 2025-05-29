@@ -3,8 +3,14 @@
 ###
 # Vamos intalar librerias utilizando entornos aislados.
 # Haciendo esto  tenemos más ordenadas las librerias por que se encuentran
-# de forma aislada para cada uno de los proyectos que tengamos.
+# de forma aislada para cada uno de los proyectos que tengamos.S
 ###
+
+import requests
+response = requests.get('https://www.google.com')
+print("codigo de estado:", response.status_code)
+
+
 
 ###
 # Para crear un entorno virtual, utilizamos el módulo venv que viene incluido en Python.
@@ -15,7 +21,7 @@
 # Esto creará un directorio llamado "mi_entorno" que contendrá una copia aislada de Python y pip.
 #
 # Para activar el entorno virtual, utilizamos el siguiente comando:
-# En Windows:
+# En Windows en CMD:
 # mi_entorno\Scripts\activate
 #
 # En macOS y Linux:
@@ -27,4 +33,11 @@
 #
 # Para desactivar el entorno virtual, simplemente ejecutamos:
 # deactivate
+#
+#
+# Si queremos eliminar todo el entorno virtual sol tendremos que borrar la carpeta que se creó 
+# al crear el entorno virtual.
+#
+# Tod esto se hace para evitar posibles conflitos entre librerias en un futuro 
+# cuando tengamos muchas librerias instaladas y así tener un sistema mas limpio y ordenado.
 ###
